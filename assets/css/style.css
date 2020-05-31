@@ -1,0 +1,321 @@
+:root {
+    --dodgerblue: rgb(62, 139, 255);
+    --orangered: rgb(255, 79, 31);
+    --navy: rgb(0, 0, 101);
+    --darkcyan: rgb(0, 142, 142);
+    --text-background-darkcyan: rgba(0, 142, 142, .5)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title {
+    width: 20%;
+    font-size: 30px;
+    color: var(--dodgerblue);
+    border-right: 10px solid var(--darkcyan);
+    padding-bottom: 20px;
+    word-spacing: 999px;
+    text-align: right;
+    padding: 15px;
+}
+
+.right-side {
+    width: 80%;
+}
+
+/* Header */
+
+header {
+    padding: 20px 10px 20px 0;
+    background-image: url(../images/peach_colored_construction_paper_seamless.jpg);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 48px;
+    color: black;
+    margin: 0;
+    background-color: var(--darkcyan);
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 15px 5px 1px;
+}
+
+header h1 a {
+    text-decoration: none;
+}
+
+header h1:hover {
+    color: white;
+    text-shadow: none;
+}
+
+
+header a {
+    text-decoration: underline;
+}
+
+header nav {
+    margin: 20px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 24px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--darkcyan);
+}
+
+header nav ul li a:hover {
+    color: white;
+    text-shadow: none;
+}
+
+.content {
+    background-image: url(../images/peach_colored_construction_paper_seamless.jpg);
+}
+
+.content section{
+    padding: 20px;
+}
+
+/* Hero */
+
+.hero {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    position: relative; 
+}
+
+.hero p {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 32px;
+    background-color: var(--text-background-darkcyan);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* About Me */
+
+.about-me {
+    display: flex;
+}
+
+.about-me div p {
+    padding: 10px 15px;   
+}
+
+/* Work */
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    padding: 10px 15px;
+}
+
+.grid-item {
+    border: 5px solid var(--darkcyan);
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: .2;
+}
+
+.grid-item:hover {
+    opacity: 1;
+}
+
+.grid-item div {
+    text-decoration: none;
+    background-color: var(--text-background-darkcyan);
+    padding: 15px;
+    width: 50%;
+    height: auto;
+    text-align: center;
+
+}
+
+.item-1 {
+    grid-row: 1/ span 2;
+    grid-column: 1/ span 2;
+    background-image: url(../images/runbuddy.PNG);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.item-2 {
+    background-image: url(../images/horiseon.PNG);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.item-3 {
+    background-image: url(../images/dallas.jpg);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.item-4 {
+    background-image: url(../images/saxophone-vector-clipart_800.png);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.item-5 {
+    background-image: url(../images/slices-of-bread.jpg);
+    background-size: cover;
+    background-repeat: none;
+}
+
+/* Contact */
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact ul {
+    width: 100%;
+}
+
+.contact ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 32px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--darkcyan);
+}
+
+.contact ul li a:hover {
+    font-size: 52px;
+}
+
+
+.contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+       justify-content: center;
+    }
+
+    header h1 {
+        background-color: var(--text-background-darkcyan);
+        padding: 5px;
+    }
+
+    .title {
+        font-size: 42px;
+        width: 10%;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        border-right: 0;
+        border-left: 10px solid var(--darkcyan);
+        word-spacing: 10px;
+        display: inline-flex;
+    }
+
+    body {
+        justify-content: center;
+    }
+
+    .about-me div p {
+        padding: 5px 0 5px 15px;
+        font-size: 18px;  
+    }
+
+    .grid-container {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-item {
+        opacity: 1;
+    }
+
+    .item-1, .item-2, .item-3, .item-4, .item-5 {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .contact {
+        padding: 20px 0;
+    }
+    .contact ul li a {
+        font-size: 32px;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+    header nav ul li a {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 24px;
+        background-color: var(--darkcyan);
+    }
+
+    .about-me div p {
+        padding: 5px 0 5px 15px;
+        font-size: 18px;   
+    }
+
+    .contact ul li a {
+        font-size: 32px;
+
+    }
+}
+
+/* @media screen and (max-width: 768px) and smaller {
+
+might look at taking the flex off of .about-me, .work, and .contact, would need to change titles back to normal  */
+
