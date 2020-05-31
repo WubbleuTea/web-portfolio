@@ -2,12 +2,14 @@
     --dodgerblue: rgb(62, 139, 255);
     --orangered: rgb(255, 79, 31);
     --navy: rgb(0, 0, 101);
-    --lightseagreen: rgb(0, 166, 184);
+    --darkcyan: rgb(0, 142, 142);
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .title {
@@ -25,8 +27,8 @@
 /* Header */
 
 header {
-    padding: 20px 0;
-    background-color: var(--navy);
+    padding: 20px 10px 20px 0;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -40,20 +42,26 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 72px;
-    color: var(--navy);
+    font-size: 48px;
+    color: black;
     margin: 0;
-    text-shadow: 0 0 10px var(--orangered);
-    background-color: var(--lightseagreen);
+    background-color: var(--darkcyan);
+    text-decoration: none;
+    text-align: bottom;
 }
 
+header h1:hover {
+    color: white;
+    text-shadow: none;
+}
+
+
 header a {
-    text-decoration: none;
     text-decoration: underline;
 }
 
 header nav {
-    margin: 7px 0;
+    margin: 20px 0;
 }
 
 header nav ul {
@@ -69,15 +77,14 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: var(--lightseagreen);
+    color: var(--darkcyan);
 }
 
 header nav ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 15px;
+    color: white;
     text-shadow: none;
 }
+
 /* Hero */
 
 .hero {
