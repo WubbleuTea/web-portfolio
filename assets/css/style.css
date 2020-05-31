@@ -166,13 +166,14 @@ header nav ul li a:hover {
     opacity: 1;
 }
 
-.grid-item a {
+.grid-item div {
     text-decoration: none;
-    display: flex;
-    position: bottom;
-    align-items: flex-end;
     background-color: var(--text-background-darkcyan);
     padding: 15px;
+    width: 50%;
+    height: auto;
+    text-align: center;
+
 }
 
 .item-1 {
@@ -218,16 +219,16 @@ header nav ul li a:hover {
     width: 100%;
 }
 
-.contact ul li a{
+.contact ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 32px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: var(--darkcyan);
 }
 
 .contact ul li a:hover {
-    font-size: 200%;
+    font-size: 52px;
 }
 
 
@@ -245,17 +246,29 @@ header nav ul li a:hover {
        justify-content: center;
     }
 
+    header h1 {
+        background-color: var(--text-background-darkcyan);
+        padding: 5px;
+    }
+
     .title {
+        font-size: 42px;
         width: 10%;
         writing-mode: vertical-lr;
-        text-transform: rotate(180deg);
+        transform: rotate(180deg);
         border-right: 0;
         border-left: 10px solid var(--darkcyan);
         word-spacing: 10px;
+        display: inline-flex;
     }
 
     body {
         justify-content: center;
+    }
+
+    .about-me div p {
+        padding: 5px 0 5px 15px;
+        font-size: 18px;  
     }
 
     .grid-container {
@@ -265,7 +278,6 @@ header nav ul li a:hover {
     
     .grid-item {
         opacity: 1;
-        font-size: 12px;
     }
 
     .item-1, .item-2, .item-3, .item-4, .item-5 {
@@ -273,12 +285,37 @@ header nav ul li a:hover {
         grid-column: span 1;
     }
 
+    .contact {
+        padding: 20px 0;
+    }
     .contact ul li a {
-        font-size: 3vw;
+        font-size: 32px;
     }
 
 }
 
 @media screen and (max-width: 980px) {
+    header nav ul li a {
+        font-size: 32px;
+    }
 
+    .hero p {
+        font-size: 24px;
+        background-color: var(--darkcyan);
+    }
+
+    .about-me div p {
+        padding: 5px 0 5px 15px;
+        font-size: 18px;   
+    }
+
+    .contact ul li a {
+        font-size: 32px;
+
+    }
 }
+
+/* @media screen and (max-width: 768px) and smaller {
+
+might look at taking the flex off of .about-me, .work, and .contact, would need to change titles back to normal  */
+
