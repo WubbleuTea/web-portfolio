@@ -3,6 +3,7 @@
     --orangered: rgb(255, 79, 31);
     --navy: rgb(0, 0, 101);
     --darkcyan: rgb(0, 142, 142);
+    --text-background-darkcyan: rgba(0, 142, 142, .5)
 }
 
 *{
@@ -50,7 +51,12 @@ header h1 {
     margin: 0;
     background-color: var(--darkcyan);
     text-decoration: none;
-    text-align: bottom;
+    text-align: center;
+    padding: 5px 15px 5px 1px;
+}
+
+header h1 a {
+    text-decoration: none;
 }
 
 header h1:hover {
@@ -96,7 +102,6 @@ header nav ul li a:hover {
     padding: 20px;
 }
 
-
 /* Hero */
 
 .hero {
@@ -111,7 +116,7 @@ header nav ul li a:hover {
     bottom: 8px;
     right: 16px;
     font-size: 32px;
-    background-color: var(--darkcyan);
+    background-color: var(--text-background-darkcyan);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 25px;
@@ -129,20 +134,10 @@ header nav ul li a:hover {
     display: flex;
 }
 
-.about-me h2 {
-}
-
-.about-me div {
-
-}
-
 .about-me div p {
     padding: 10px 15px;   
 }
 
-#text-me {
-    margin-right: -30px; 
-}
 /* Work */
 
 .work {
@@ -164,12 +159,52 @@ header nav ul li a:hover {
     font-size: 25px;
     display: flex;
     flex-wrap: wrap;
-    padding: 50px;
+    opacity: .2;
+}
+
+.grid-item:hover {
+    opacity: 1;
+}
+
+.grid-item a {
+    text-decoration: none;
+    display: flex;
+    position: bottom;
+    align-items: flex-end;
+    background-color: var(--text-background-darkcyan);
+    padding: 15px;
 }
 
 .item-1 {
     grid-row: 1/ span 2;
     grid-column: 1/ span 2;
+    background-image: url(../images/runbuddy.PNG);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.item-2 {
+    background-image: url(../images/horiseon.PNG);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.item-3 {
+    background-image: url(../images/dallas.jpg);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.item-4 {
+    background-image: url(../images/saxophone-vector-clipart_800.png);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.item-5 {
+    background-image: url(../images/slices-of-bread.jpg);
+    background-size: cover;
+    background-repeat: none;
 }
 
 /* Contact */
@@ -203,4 +238,47 @@ header nav ul li a:hover {
     align-items: center;
     list-style: none;
     height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+       justify-content: center;
+    }
+
+    .title {
+        width: 10%;
+        writing-mode: vertical-lr;
+        text-transform: rotate(180deg);
+        border-right: 0;
+        border-left: 10px solid var(--darkcyan);
+        word-spacing: 10px;
+    }
+
+    body {
+        justify-content: center;
+    }
+
+    .grid-container {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-item {
+        opacity: 1;
+        font-size: 12px;
+    }
+
+    .item-1, .item-2, .item-3, .item-4, .item-5 {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .contact ul li a {
+        font-size: 3vw;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
 }
