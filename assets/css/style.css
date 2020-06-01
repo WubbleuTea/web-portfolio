@@ -104,7 +104,7 @@ header nav ul li a:hover {
 /* Hero */
 
 .hero {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap; 
     position: relative; 
@@ -123,10 +123,7 @@ header nav ul li a:hover {
 
 .hero img {
     width: 100%;
-    height: auto;
 }
-
-/* I am having trouble getting the image to fit on my actual phone correctly.  It fits the width correctly but streches the height. */
 
 
 /* About Me */
@@ -288,7 +285,6 @@ header nav ul li a:hover {
     .contact {
         padding: 20px 0;
     }
-
     .contact ul li a {
         font-size: 32px;
     }
@@ -335,7 +331,7 @@ header nav ul li a:hover {
 
     .right-side {
         width: 100%;
-        padding-top: 30px;
+        padding-top: 15px;
     }
 
 }
