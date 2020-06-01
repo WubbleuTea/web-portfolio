@@ -250,6 +250,11 @@ header nav ul li a:hover {
         padding: 5px;
     }
 
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
     .title {
         font-size: 42px;
         width: 10%;
