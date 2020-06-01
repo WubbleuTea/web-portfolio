@@ -64,7 +64,6 @@ header h1:hover {
     text-shadow: none;
 }
 
-
 header a {
     text-decoration: underline;
 }
@@ -84,7 +83,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 24px;
+    font-size: 32px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: var(--darkcyan);
 }
@@ -116,7 +115,7 @@ header nav ul li a:hover {
     bottom: 8px;
     right: 16px;
     font-size: 32px;
-    background-color: var(--text-background-darkcyan);
+    background-color: var(--darkcyan);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 25px;
