@@ -15,7 +15,7 @@
 
 .title {
     width: 20%;
-    font-size: 30px;
+    font-size: 42px;
     color: var(--dodgerblue);
     border-right: 10px solid var(--darkcyan);
     padding-bottom: 20px;
@@ -122,7 +122,8 @@ header nav ul li a:hover {
 }
 
 .hero img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -250,13 +251,7 @@ header nav ul li a:hover {
         padding: 5px;
     }
 
-    .hero img {
-        height: auto;
-    }
-
     .title {
-        font-size: 42px;
-        width: 10%;
         writing-mode: vertical-lr;
         transform: rotate(180deg);
         border-right: 0;
@@ -322,6 +317,7 @@ header nav ul li a:hover {
     .about-me {
         display: block;
     }
+
     .title {
         font-size: 42px;
         width: 100%;
@@ -336,6 +332,7 @@ header nav ul li a:hover {
 
     .right-side {
         width: 100%;
+        padding-top: 30px;
     }
 
 }
