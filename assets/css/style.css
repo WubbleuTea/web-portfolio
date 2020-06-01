@@ -251,7 +251,6 @@ header nav ul li a:hover {
     }
 
     .hero img {
-        width: auto;
         height: auto;
     }
 
@@ -308,18 +307,35 @@ header nav ul li a:hover {
         background-color: var(--darkcyan);
     }
 
-    .about-me div p {
-        padding: 5px 0 5px 15px;
-        font-size: 18px;   
-    }
-
     .contact ul li a {
         font-size: 32px;
 
     }
 }
 
-/* @media screen and (max-width: 768px) and smaller {
+@media screen and (max-width: 768px) {
+    
+    .header h1 {
+        font-size: 25px;
+    }
 
-might look at taking the flex off of .about-me, .work, and .contact, would need to change titles back to normal  */
+    .about-me {
+        display: block;
+    }
+    .title {
+        font-size: 42px;
+        width: 100%;
+        writing-mode: initial;
+        transform: initial;
+        border-left: 0;
+        border-bottom: 10px solid var(--darkcyan);
+        word-spacing: 10px;
+        display: inline-flex;
+        padding-bottom: 15px;
+    }
 
+    .right-side {
+        width: 100%;
+    }
+
+}
