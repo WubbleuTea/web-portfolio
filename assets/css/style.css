@@ -251,7 +251,7 @@ header nav ul li a:hover {
     }
 
     .hero img {
-        width: 100%;
+        width: auto;
         height: auto;
     }
 
