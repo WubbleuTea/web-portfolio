@@ -14,19 +14,14 @@
 }
 
 .title {
-    width: 20%;
-    font-size: 42px;
+    width: 100%;
+    font-size: 4vh;
     color: var(--dodgerblue);
-    border-right: 10px solid var(--darkcyan);
+    border-bottom: 10px solid var(--darkcyan);
     padding-bottom: 20px;
-    word-spacing: 999px;
-    text-align: right;
     padding: 15px;
 }
 
-.right-side {
-    width: 80%;
-}
 a {
     text-decoration: none;
 }
@@ -48,22 +43,22 @@ header {
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 48px;
-    color: black;
     margin: 0;
-    background-color: var(--darkcyan);
-    text-decoration: none;
     text-align: center;
     padding: 5px 15px 5px 1px;
 }
 
 header h1 a {
     text-decoration: none;
+    font-weight: bold;
+    font-size: 5vh;
+    color: var(--darkcyan);
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-header h1:hover {
-    color: white;
+header h1 a:hover {
     text-shadow: none;
 }
 
@@ -86,13 +81,12 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 32px;
+    font-size: 3vh;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: var(--darkcyan);
 }
 
 header nav ul li a:hover {
-    color: ;
     text-shadow: none;
     transition: ease-in-out;
 }
@@ -118,7 +112,7 @@ header nav ul li a:hover {
     position: absolute;
     bottom: 8px;
     right: 16px;
-    font-size: 32px;
+    font-size: 3vh;
     background-color: var(--darkcyan);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -126,18 +120,12 @@ header nav ul li a:hover {
 }
 
 .hero img {
-    width: 100%;
-}
-
-
-/* About Me */
-
-.about-me {
-    display: flex;
+    width: 100vw;
+    max-height: 70vh;
 }
 
 .about-me div p {
-    font-size: 24px;
+    font-size: 2vh;
     padding: 10px 15px;   
 }
 
@@ -158,14 +146,6 @@ header nav ul li a:hover {
 .work-image {
     width: 100%;
     max-width: 500px;
-}
-
-.grid-item {
-    border: 5px solid var(--darkcyan);
-    font-size: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    opacity: .2;
 }
 
 .grid-item:hover {
@@ -198,7 +178,7 @@ header nav ul li a:hover {
     padding: 1vh;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 0 auto;
 }
 .work-image-container img {
     border: 12px inset var(--darkcyan);
@@ -214,7 +194,7 @@ header nav ul li a:hover {
 }
 .work-image:hover{
     transition: ease-in-out 500ms;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 .work-text-container h3 {
@@ -234,21 +214,21 @@ header nav ul li a:hover {
 }
 
 .contact ul {
+    margin-top: 1vh;
     width: 100%;
 }
 
 .contact ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 32px;
+    font-size: 3vh;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: var(--darkcyan);
 }
 
 .contact ul li a:hover {
-    font-size: 52px;
+    text-shadow: none;
 }
-
 
 .contact ul {
     display: flex;
@@ -265,38 +245,20 @@ header nav ul li a:hover {
     }
 
     header h1 {
-        background-color: var(--text-background-darkcyan);
         padding: 5px;
-    }
-
-    .title {
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-        border-right: 0;
-        border-left: 10px solid var(--darkcyan);
-        word-spacing: 10px;
-        display: inline-flex;
-    }
-
-    body {
-        justify-content: center;
     }
 
     .about-me div p {
         padding: 5px 0 5px 15px;
-        font-size: 18px;  
+        font-size: 1.8vh;  
     }
 
     .grid-container {
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(10, 1fr);
         grid-template-columns: 1fr;
     }
     
-    .grid-item {
-        opacity: 1;
-    }
-
-    .item-1, .item-2, .item-3, .item-4, .item-5 {
+    .item-1, .item-2 {
         grid-row: span 1;
         grid-column: span 1;
     }
@@ -304,53 +266,10 @@ header nav ul li a:hover {
     .contact {
         padding: 20px 0;
     }
-    .contact ul li a {
-        font-size: 32px;
-    }
-
 }
 
 @media screen and (max-width: 980px) {
-    header nav ul li a {
-        font-size: 32px;
-    }
-
     .hero p {
-        font-size: 24px;
-        background-color: var(--darkcyan);
+        font-size: 2vh;
     }
-
-    .contact ul li a {
-        font-size: 32px;
-
-    }
-}
-
-@media screen and (max-width: 768px) {
-    
-    .header h1 {
-        font-size: 25px;
-    }
-
-    .about-me {
-        display: block;
-    }
-
-    .title {
-        font-size: 42px;
-        width: 100%;
-        writing-mode: initial;
-        transform: initial;
-        border-left: 0;
-        border-bottom: 10px solid var(--darkcyan);
-        word-spacing: 10px;
-        display: inline-flex;
-        padding-bottom: 15px;
-    }
-
-    .right-side {
-        width: 100%;
-        padding-top: 15px;
-    }
-
 }
