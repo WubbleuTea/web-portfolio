@@ -93,8 +93,9 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: white;
+    color: ;
     text-shadow: none;
+    transition: ease-in-out;
 }
 
 .content {
@@ -183,42 +184,22 @@ header nav ul li a:hover {
 }
 
 .item-1 {
-    grid-row: 1/ span 2;
-    grid-column: 1/ span 2;
-    background-image: url(../images/runbuddy.PNG);
-    background-size: cover;
-    background-repeat: none;
+    grid-row: 2;
+    grid-column: 2;
 }
 
 .item-2 {
-    background-image: url(../images/weather-checker.PNG);
-    background-size: cover;
-    background-repeat: none;
+    grid-row: 4;
+    grid-column: 2;
 }
 
-.item-3 {
-    background-image: url(../images/runbuddy.PNG);
-    background-size: cover;
-    background-repeat: none;
-}
-
-.item-4 {
-    background-image: url(../images/horiseon.PNG);
-    background-size: cover;
-    background-repeat: none;
-}
-
-.item-5 {
-    background-image: url(../images/slices-of-bread.jpg);
-    background-size: cover;
-    background-repeat: none;
-}
 .work-image-container {
     text-align: center;
     align-items: center;
     padding: 1vh;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 .work-image-container img {
     border: 12px inset var(--darkcyan);
@@ -228,14 +209,23 @@ header nav ul li a:hover {
     text-align: center;
     align-items: center;
     padding: 1vh;
+    margin: auto;
+    border-bottom: 12px inset var(--darkcyan);
+    border-radius: 0px 40px 0px 40px;
 }
-.work-title, .work-text-container h3 {
+.work-image:hover{
+    transition: ease-in-out 500ms;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.work-text-container h3 {
     font-size: 4vh;
 }
 .work-text-container p {
     font-size: 2vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
+
 }
 /* Contact */
 
