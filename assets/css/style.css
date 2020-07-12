@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .title {
@@ -18,8 +17,7 @@
     font-size: 4vh;
     color: var(--dodgerblue);
     border-bottom: 10px solid var(--darkcyan);
-    padding-bottom: 20px;
-    padding: 15px;
+    padding: 1.5vh;
 }
 
 a {
@@ -29,7 +27,7 @@ a {
 /* Header */
 
 header {
-    padding: 20px 10px 20px 0;
+    padding: 2vh 1vh;
     background-image: url(../images/peach_colored_construction_paper_seamless.jpg);
     display: flex;
     justify-content: space-between;
@@ -45,7 +43,7 @@ header {
 header h1 {
     margin: 0;
     text-align: center;
-    padding: 5px 15px 5px 1px;
+    padding: .5vh 1.5vh .5vh .1vh;
 }
 
 header h1 a {
@@ -79,7 +77,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 1vh 1.5vh;
     font-weight: lighter;
     font-size: 3vh;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -96,7 +94,7 @@ header nav ul li a:hover {
 }
 
 .content section{
-    padding: 20px;
+    padding: 2vh;
 }
 
 /* Hero */
@@ -106,6 +104,8 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap; 
     position: relative; 
+    background-image: url(../images/peach_colored_construction_paper_seamless.jpg);
+    padding: 1vh;
 }
 
 .hero p {
@@ -115,18 +115,21 @@ header nav ul li a:hover {
     font-size: 3vh;
     background-color: var(--darkcyan);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    padding: 1vh;
     border-radius: 25px;
 }
 
 .hero img {
     width: 100vw;
-    max-height: 90vh;
+    overflow: hidden;
+    border: 12px inset var(--darkcyan);
+    border-radius: 0px 40px 0px 40px;
+    
 }
 
 .about-me div p {
     font-size: 2vh;
-    padding: 10px 15px;   
+    padding: 1vh 2vh;   
 }
 
 /* Work */
@@ -141,11 +144,13 @@ header nav ul li a:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-auto-flow: dense;
-    padding: 10px 15px;
+    padding: 1vh 1.5vh;
 }
 .work-image {
     width: 100%;
     max-width: 500px;
+    border: 12px inset var(--darkcyan);
+    border-radius: 0px 40px 0px 40px;
 }
 
 .grid-item:hover {
@@ -155,7 +160,7 @@ header nav ul li a:hover {
 .grid-item div {
     text-decoration: none;
     background-color: var(--text-background-darkcyan);
-    padding: 15px;
+    padding: 1.5vh;
     width: 50%;
     height: auto;
     text-align: center;
@@ -180,10 +185,7 @@ header nav ul li a:hover {
     justify-content: center;
     margin: 0 auto;
 }
-.work-image-container img {
-    border: 12px inset var(--darkcyan);
-    border-radius: 0px 40px 0px 40px;
-}
+
 .work-text-container {
     text-align: center;
     align-items: center;
@@ -219,7 +221,7 @@ header nav ul li a:hover {
 }
 
 .contact ul li a {
-    padding: 10px 15px;
+    padding: 1vh 1.5vh;
     font-weight: lighter;
     font-size: 3vh;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -245,11 +247,11 @@ header nav ul li a:hover {
     }
 
     header h1 {
-        padding: 5px;
+        padding: .5vh;
     }
 
     .about-me div p {
-        padding: 5px 0 5px 15px;
+        padding: .5vh 0 .5vh 1.5vh;
         font-size: 1.8vh;  
     }
 
@@ -264,12 +266,22 @@ header nav ul li a:hover {
     }
 
     .contact {
-        padding: 20px 0;
+        padding: 2vh 0;
     }
 }
 
 @media screen and (max-width: 980px) {
     .hero p {
+        font-size: 2vh;
+    }
+    
+    /* .hero img {
+        max-height: 200px;
+    } */
+}
+
+@media screen and (max-width: 500px) {
+    header a {
         font-size: 2vh;
     }
 }
